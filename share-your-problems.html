@@ -1,0 +1,100 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>SHARE YOUR PROBLEMS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .nav-bar a:hover {
+            color: #ccc;
+        }
+        .problem-form {
+            margin-top: 20px;
+        }
+        .problem-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .problem-form textarea {
+            width: 100%;
+            height: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .problem-form select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .problem-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .problem-form button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="container">
+        <h1>SHARE YOUR PROBLEMS</h1>
+        <p>If no one listens to you, your problems, no one understands you. We will understand you and help you overcome your problems. Don't worry your secrets won't be shared with anyone and we assure you will be happy with our service.</p>
+        <div class="problem-form">
+            <form>
+                <label for="problem">Write your problem:</label>
+                <textarea id="problem" name="problem"></textarea>
+                <label for="consultation">Select a consultation service:</label>
+                <select id="consultation" name="consultation">
+                    <option value="text">Text Consultation (30rs)</option>
+                    <option value="call">Call Consultation (50rs)</option>
+                </select>
+                <button>Submit</button>
+            </form>
+        </div>
+        <p>Contact Numbers:</p>
+        <ul>
+            <li>8099853412</li>
+            <li>9395925405</li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
