@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURG Platform</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f8f9fa; padding: 10px; text-align: center; }
+        .dashboard { margin: 20px; }
+        .panel { border: 1px solid #ddd; border-radius: 4px; padding: 15px;
+            margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BURG Platform Dashboard</h1>
+    </header>
+    <div class="dashboard">
+        <div class="panel" id="quotes-panel">Quotes</div>
+        <div class="panel" id="suppliers-panel">Suppliers</div>
+        <div class="panel" id="invoices-panel">Invoices</div>
+        <div class="panel" id="approvals-panel">Approvals</div>
+        <div class="panel" id="payments-panel">Payments</div>
+        <div class="panel" id="vendor-management-panel">Vendor Management</div>
+        <div class="panel" id="intake-requests-panel">Intake Requests</div>
+        <div class="panel" id="purchase-orders-panel">Purchase Orders</div>
+        <div class="panel" id="integrations-panel">Integrations</div>
+        <div class="panel" id="analytics-panel">Analytics</div>
+    </div>
+    <footer>
+        <p>&copy; 2026 BURG Platform</p>
+    </footer>
+    <script>
+        const quotes = ["Quote 1", "Quote 2", "Quote 3"];
+        const suppliers = ["Supplier 1", "Supplier 2", "Supplier 3"];
+        const invoices = ["Invoice 1", "Invoice 2", "Invoice 3"];
+        const approvals = ["Approval 1", "Approval 2"];
+        const payments = ["Payment 1", "Payment 2"];
+
+        function renderPanel(panelId, data) {
+            const panel = document.getElementById(panelId);
+            panel.innerHTML = '<h2>' + panelId + '</h2>' + '<ul>' + data.map(item => '<li>' + item + '</li>').join('') + '</ul>';
+        }
+
+        renderPanel("quotes-panel", quotes);
+        renderPanel("suppliers-panel", suppliers);
+        renderPanel("invoices-panel", invoices);
+        renderPanel("approvals-panel", approvals);
+        renderPanel("payments-panel", payments);
+    </script>
+</body>
+</html>
